@@ -16,6 +16,10 @@ mongoose
   .then(() => console.log("MongoDB connected..."))
   .catch((err) => console.log(err));
 
+/*
+    mongoose Clusters > Networks Access > IP Address 현재 접속 IP로 수정
+*/
+
 app.get("/", (req, res) => {
   res.send("Hello node & express");
 });
