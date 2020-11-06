@@ -18,6 +18,7 @@ mongoose
 
 /*
     mongoose Clusters > Networks Access > IP Address 현재 접속 IP로 수정
+    npm run start
 */
 
 app.get("/", (req, res) => {
