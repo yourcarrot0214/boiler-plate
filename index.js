@@ -41,3 +41,6 @@ app.post("/register", (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
+// #10. Bcrypt로 비밀번호 암호화 하기
+// $ npm install bcrypt --save
