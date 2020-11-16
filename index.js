@@ -3,10 +3,12 @@ const app = express();
 const port = 5000;
 const { User } = require("./models/User");
 const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
 const config = require("./config/key");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 const mongoose = require("mongoose");
 mongoose
@@ -47,19 +49,26 @@ app.post("/login", (req, res) => {
         message: "데이터베이스에 없는 이메일 입니다.",
       });
     }
-  });
+    // 2. 있다면 비밀번호가 맞는지 확인
+    user.comparePassword(req.body.password, (err, isMatch) => {
+      if (!isMatch) {
+        return res.json({
+          loginSuccess: false,
+          message: "비밀번호가 틀렸습니다.",
+        });
+      }
+      // 3. 둘다 맞다면 토큰을 생성.
+      user.generateToken((err, user) => {
+        if (err) return res.status(400).send(err);
 
-  // 2. 있다면 비밀번호가 맞는지 확인
-  user.comparePassword(req.body.password, (err, isMatch) => {
-    if (!isMatch) {
-      return res.json({
-        loginSuccess: false,
-        message: "비밀번호가 틀렸습니다.",
+        // token을 저장.(cookies, local storage 등)
+        res
+          .cookie("X_auth", user.token)
+          .status(200)
+          .json({ loginSuccess: true, userId: user._id });
       });
-    }
+    });
   });
-
-  // 3. 둘다 맞다면 토큰을 생성.
 });
 
 app.listen(port, () => {
@@ -68,3 +77,8 @@ app.listen(port, () => {
 
 // #10. Bcrypt로 비밀번호 암호화 하기
 // $ npm install bcrypt --save
+
+// #12. jsonwebtoken으로 토큰 생성하기
+// $ npm install jsonwebtoken --save
+// Cookies에 token값을 저장하기 위한 cookie-parser 라이브러리 설치
+// $ npm install cookie-parser --save
