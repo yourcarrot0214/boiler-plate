@@ -28,9 +28,9 @@ mongoose
     $ npm install nodemon --save-dev
 */
 
-app.get("/", (req, res) => {
-  res.send("Hello node & express & nodemon");
-});
+app.get("/", (req, res) => res.send("Hello node & express & nodemon"));
+
+app.get("/api/hello", (req, res) => res.send("Axios & proxy setting"));
 
 app.post("/api/users/register", (req, res) => {
   const user = new User(req.body);
