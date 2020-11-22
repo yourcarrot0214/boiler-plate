@@ -22,12 +22,6 @@ mongoose
   .then(() => console.log("MongoDB connected..."))
   .catch((err) => console.log(err));
 
-/*
-    mongoose Clusters > Networks Access > IP Address 현재 접속 IP로 수정
-    nodemon :: 소스의 변경된 부분을 감지하여 자동으로 서버를 재시작해주는 모듈
-    $ npm install nodemon --save-dev
-*/
-
 app.get("/", (req, res) => res.send("Hello node & express & nodemon"));
 
 app.get("/api/hello", (req, res) => res.send("Axios & proxy setting"));
