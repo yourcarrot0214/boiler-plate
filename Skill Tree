@@ -1,1 +1,37 @@
-<mxfile host="app.diagrams.net" modified="2021-04-06T04:29:30.030Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" version="14.0.4" etag="1HiOqxop1TylnASrGBUj" type="github"><diagram id="nltL1isYfiY2tB8mD29T">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-06T05:24:54.509Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="ycWWDD8_SSJm3uYnX2-n" version="14.0.4" type="github">
+  <diagram id="nltL1isYfiY2tB8mD29T" name="Page-1">
+    <mxGraphModel dx="946" dy="1757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TS45bx7WYQFlYnQRBc8M-1" value="&lt;h1&gt;Skill Tree 기획안&lt;/h1&gt;&lt;div&gt;skill tree에 필요한 기능들을 정리합시다.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TS45bx7WYQFlYnQRBc8M-2" value="LandingPage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TS45bx7WYQFlYnQRBc8M-3" value="Skills" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TS45bx7WYQFlYnQRBc8M-4" value="NavBar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TS45bx7WYQFlYnQRBc8M-6" value="Project" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TS45bx7WYQFlYnQRBc8M-7" value="Study" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TS45bx7WYQFlYnQRBc8M-8" value="Footer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TS45bx7WYQFlYnQRBc8M-9" value="Menu &amp;gt; router&lt;br&gt;Left, Right Menu로 구분&lt;br&gt;Left : Home, Skills, Project, Study&lt;br&gt;Right: Profile" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="440" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TS45bx7WYQFlYnQRBc8M-12" value="LandinPage에서는 프리뷰&lt;br&gt;&amp;nbsp; - 현재 등록되어 있는 스킬들을 태그 또는 로고 형식으로 출력&lt;br&gt;&lt;br&gt;SkillsPage에서는 구체적 기능 구현&lt;br&gt;&amp;nbsp; - 스킬 검색 기능&lt;br&gt;&amp;nbsp; - 스킬 검색 결과 출력&lt;br&gt;&amp;nbsp; &amp;nbsp; - 다룰줄 알아요!, 배우고 싶어요! 두 개의 카테고리로 유저 정보출력&lt;br&gt;&amp;nbsp; - Side Menu 기능 구현&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="360" y="240" width="440" height="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
